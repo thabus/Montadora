@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Montadora</title>
+  <script src="script.js" defer></script>
+  <style>
+    div#colorida{
+      width: 30vw;
+      height: 30px;
+      background-color: yellowgreen;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<div id="colorida"></div>
+<label for="muda_cor">Muda Cor</label>
+<input type="color" id="muda_cor" name="muda_cor" onchange="fun_muda_cor()">
+
+<hr>
+<br>
+<label for="quantidade"> Quantidade</label>
+<input type="number" id="quantidade" name="quantidade" onchange="quantidade()">
+<br>
+<form>
+<select name="montadoras" id="montadoras" onchange="func_selecionar()"></select>
+</form>
+  
+<br>
+<hr>
+<br>
+<div>
+<span id="mostrar"></span>
+</div>
+<hr>
+<br>
+
+<label for='nova_montadora'>Nova Montadora</label>
+<input type="text" name='nova_montadora' id='nova_montadora'>
+<input type="button" value='Nova Montadora' onclick='inclui_nova_montadora()'>
+
+<hr>
+<br>
+
+<input type='button' value='Excluir uma montadora' onclick='exclui_montadora()'>
+
+
+
+</body>
+
+</html>
